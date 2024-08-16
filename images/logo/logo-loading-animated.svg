@@ -41,7 +41,7 @@
     <animate id="animation_background_o"
       attributeName="opacity"
       begin="0s"
-      dur="4s"
+      dur="0.5s"
       from="0.0"
       to="1.0"
       fill="freeze" />
