@@ -30,7 +30,7 @@
   <path d="M 2380 50 L 2380 450 C 2380 550 2390 550 2400 550" fill="none" stroke="white" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"></path>
   <!--i-->
   <path d="M 2550 250 L 2550 550" fill="none" stroke="white" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"></path>
-  <circle cx="2550" cy="100" r="2" fill="none" stroke="white" stroke-width="100" stroke-linecap="round" stroke-linejoin="round"></circle>
+  <circle cx="2550" cy="100" r="50" fill="white" stroke="white" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"></circle>
   <!--s-->
   <path d="M 3020 250 A 150 100 0 1 0 2870 350 A 150 100 0 1 1 2720 450" fill="none" stroke="white" stroke-width="100" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
