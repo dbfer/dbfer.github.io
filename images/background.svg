@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 120 100">
+  <defs>
+    <linearGradient id="g1" gradientTransform="rotate(90)">
+      <stop offset="5%" stop-color="rgba(33, 123, 143, 0.1)" />
+      <stop offset="95%" stop-color="black" />
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M 0 0 L 0 90 Q 10 95 20 90 T 40 85 T 60 92.5 T 80 90 T 100 85 T 120 90 L 120 0 Z" fill="url('#g1')" opacity="0.5">
+      <animate id="p1a1" attributeName="d" fill="freeze" dur="10s" begin="0s; p1a2.end" from="M 0 0 L 0 90 Q 10 95 20 90 T 40 85 T 60 92.5 T 80 90 T 100 85 T 120 90 L 120 0 Z" to="M 0 0 L 0 85 Q 10 90 20 85 T 40 90 T 60 90 T 80 90 T 100 85 T 120 85 L 120 0 Z"/>
+      <animate id="p1a2" attributeName="d" fill="freeze" dur="10s" begin="p1a1.end" from="M 0 0 L 0 85 Q 10 90 20 85 T 40 90 T 60 90 T 80 90 T 100 85 T 120 85 L 120 0 Z" to="M 0 0 L 0 90 Q 10 95 20 90 T 40 85 T 60 92.5 T 80 90 T 100 85 T 120 90 L 120 0 Z"/>
+    </path>
+    <path d="M 0 0 L 0 85 Q 15 95 30 89 T 60 85 T 90 87 T 120 90 L 120 0 Z" fill="url('#g1')" opacity="0.5">
+      <animate id="p2a1" attributeName="d" fill="freeze" dur="10s" begin="0s; p2a2.end" from="M 0 0 L 0 85 Q 15 95 30 89 T 60 85 T 90 87 T 120 85 L 120 0 Z" to="M 0 0 L 0 87 Q 15 93 30 91 T 60 88 T 90 87 T 120 90 L 120 0 Z"/>
+      <animate id="p2a2" attributeName="d" fill="freeze" dur="10s" begin="p2a1.end" from="M 0 0 L 0 87 Q 15 93 30 91 T 60 88 T 90 87 T 120 90 L 120 0 Z" to="M 0 0 L 0 85 Q 15 95 30 89 T 60 85 T 90 87 T 120 85 L 120 0 Z"/>
+    </path>
+  </g>
+</svg>
