@@ -18,7 +18,7 @@
 	<body>
 		<section id="footer" class="container-fluid bg-dark text-white" style="height:100vh;background-image: url('images/background.svg');background-position: center; background-size: cover; background-repeat: no-repeat;">
 			<div class="row justify-content-center fixed-top">
-				<img id="logo" class="mx-auto px-0" src="images/logo/modalis-dark.svg" style="height:50rem;">
+				<img id="logo" class="mx-auto px-0" src="images/logo/modalis-dark.svg" style="width:160rem;">
 			</div>
 			<div class="row px-2 px-sm-3 px-md-5 pb-4 fixed-bottom">
 				<div class="col-12 col-sm-12 col-md-7">
@@ -49,7 +49,7 @@
 			$(document).ready(function(){
 				var logo_mt = $("#modalis").offset().top/4;
 				if (($(window).height()<=800 && $(window).width()<=400) || $(window).width()<=330) {
-					$('#logo').css("height","25rem")
+					$('#logo').css("width","100rem")
 				}
 				$('#logo').css("margin-top",logo_mt)
 			});
