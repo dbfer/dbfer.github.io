@@ -3,36 +3,300 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Modalis | Transforming data into actionable insights</title>
+		<title>Modalis | From data to practical solutions</title>
 		<link rel="icon" type="image/x-icon" href="images/logo/logo.svg">
-		<link rel="icon" type="image/x-icon" href="images/logo/logo.png">
-		<link rel="apple-touch-icon" href="images/logo/logo.png">
-		<link rel="mask-icon" type="image/x-icon" href="images/logo/logo.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<section id="footer" class="container-fluid bg-dark text-white" style="height:100vh;">
-			<div class="row justify-content-center fixed-top">
-				<img id="logo" class="mx-auto px-0 shadow" src="images/logo/modalis-dark.svg" style="width:16rem;">
+		<!--NAVBAR-->
+		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
+			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
+				<a href="#">
+					<img id="imgBrand" src="images/logo/modalis-light.svg" alt="logo" width="160rem" height="50rem">
+				</a>
 			</div>
-			<div class="row px-2 px-sm-3 px-md-5 pb-4 fixed-bottom">
-				<div class="col-12 col-sm-12 col-md-7">
-					<h3 id="modalis" class="ms-4 pt-4" style="color:#ced4da; max-width:580px;">Transforming data into actionable insights</h3>
+			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
+				<span id="btnNavbarTogglerSpan" class="bi bi-list"></span>
+			</button>
+			<div class="col-8">
+				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
+					<div class="offcanvas-header px-4 mt-4">
+						<img class="offcanvas-title" src="images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
+					</div>
+					<ul class="offcanvas-body navbar-nav mx-auto">
+						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
+						<a class="nav-link " href="#solutions">Solutions</a>
+						</li>
+					<li class="nav-item px-2" data-bs-dismiss="offcanvas">
+						<a class="nav-link" href="#about">About us</a>
+						</li>
+						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
+						<a class="nav-link" href="#team">Team</a>
+						</li>
+						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
+						<a class="nav-link" href="#careers">Careers</a>
+						</li>
+					</ul>
 				</div>
-				<div class="mt-3 col-12 col-sm-12 col-md-5">
-					<div>
-						<p class="my-1 ms-4 ms-sm-4 ms-md-0"><i class="me-2 bi bi-envelope-at text-warning"></i>Email Address</p>
-						<p class="my-1 ms-5 ms-sm-5 ms-md-2" style="color:#ced4da;">info@modalis.ai</p>
+			</div>
+
+			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
+				<a href="#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Contact<i class="ms-2 bi bi-send text-warning"></i></a>
+			</div>
+		</nav>
+
+
+		<section id="start">
+			<div class="mx-auto position-relative" style="height:100vh; max-height:1080px; max-width: 1920px; background-color: #ffffff;">
+				<img class="d-none d-sm-none d-md-block position-absolute" src="images/banner-background.svg" width="100%" height="100%">
+
+				<div class="mx-auto text-black text-center position-absolute top-50 start-50 translate-middle w-100 pt-5">
+					<div class="px-3 px-sm-3 px-md-3 px-lg-5 px-xl-5 z-2 mt-5">
+						<h1 class="mx-auto title d-none d-md-block" style="color: #ffffff;">Transforming data into</h1>
+						<h1 class="mx-auto title d-none d-md-block mb-4" style="color: #ffffff;">actionable insights</h1>
+						<h1 class="mx-auto title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000000;">Transforming data into</h1>
+						<h1 class="mx-auto title d-md-none mb-4" style="font-size:calc(1.7rem + 2vw); color: #000000;">actionable insights</h1>
+						<hr class="mx-auto" style="opacity: 1.0; max-width:400px; background-color: #ffffff; border: 0.01rem solid #ffffff; border-radius: 0.01rem 0.01rem 0.01rem 0.01rem; height: 0.01rem">
+						<h3 class="px-0 px-md-0 mb-4 mx-auto d-none d-md-block" style="color: #ebedf0; max-width:400px;">Automating and accelerating your work with cutting-edge computational solutions.</h3>				
+						<h3 class="px-0 px-md-0 mb-4 mx-auto d-md-none" style="color: #434343; max-width:400px;">Automating and accelerating your work with cutting-edge computational solutions.</h3>				
+						<a href="#solutions" class="shadow btn btn-secondary rounded-5 px-3 border border-1">Learn more<i class="ms-2 bi bi-play text-warning"></i></a>
 					</div>
 				</div>
-				<hr class="mt-3">
-				<div class="mt-2 col-12">
-					<p class="text-center" style="font-size:0.75rem;color:#ced4da;">Copyright © 2024 Modalis Ltd. All Rights Reserved.</p>
+			</div>
+		</section>
+
+		<section id="solutions" class="mx-auto container-fluid mt-4 py-5" style="max-width:1920px;">
+			<div class="pt-5 row mx-auto justify-content-center">
+				<div class="col-md-11 col-12 px-md-0 px-2">
+					<h1 class="header text-center">Solutions</h1>
+				</div>
+			</div>
+			<hr class="mx-auto mt-4 pb-0 mb-0 d-none d-md-none d-lg-none d-xl-block mb-5" style="width: 50%;">
+			<div class="row w-100 px-2 px-md-0 mx-0 justify-content-center">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Custom Solutions</span></p>
+							<p class="card-text">Customized product design, development, and process optimization</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height: 50px;" src="images/solutions/custom_solutions.svg" />
+						</div>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Diverse Expertise</span></p>
+							<p class="card-text">Applied cheminformatics expertise: Pharmaceuticals, Healthcare, Agriculture</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height: 50px;" src="images/solutions/expertise_diversity.svg" />
+						</div>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+			</div>
+			<div class="row w-100 px-2 px-md-0 mx-0 justify-content-center">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Boosting Performance</span></p>
+							<p class="card-text">Process improvement, problem resolution, and yield maximization</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height: 50px;" src="images/solutions/boosting_performance.svg" />
+						</div>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Robustness</span></p>
+							<p class="card-text">Every project built on quality, efficiency, and scalable impact</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height: 50px;" src="images/solutions/robustness.svg" />
+						</div>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+			</div>
+			<div class="row w-100 px-2 px-md-0 mx-0 justify-content-center">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Innovation</span></p>
+							<p class="card-text">Ready to solve your unique data challenges and transform complex data into actionable insights</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height:50px;" src="images/solutions/innovation.svg" />
+						</div>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-3 mx-2" style="width: 590px;">
+					<div class="shadow py-4 px-4 row align-items-center">
+						<div class="card-body" style="height: 100px; text-align: left;">
+							<p class="card-title mb-2"><span style="color:var(--primary-light); font-weight: bold;">Why Choose Us as Your Partner?</span></p>
+							<p class="card-text">Proven team of industry experts with deep commitment to quality and client success in every engagement</p>
+						</div>
+						<div class="card-img-top text-center mt-4">
+							<img class="img-fluid" style="height: 50px;" src="images/solutions/partnership.svg" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class="mx-auto mt-0 d-none d-md-none d-lg-none d-xl-block mt-5" style="width: 50%;">
+		</section>
+
+		<section id="about" class="mx-auto container-fluid mt-4 py-5" style="max-width:1920px;">
+			<div class="pt-5 row mx-auto justify-content-center">
+				<div class="col-md-11 col-12 px-md-0 px-2">
+					<h1 class="header text-center">About us</h1>
+				</div>
+			</div>
+			<hr class="mx-auto mt-4 pb-0 mb-0 d-none d-md-none d-lg-none d-xl-block" style="width: 50%;">
+			<div class="row w-100 px-2 px-md-0 mx-0 justify-content-center">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-5" style="width: 590px;">
+					<div class="shadow py-4 p-xl-5 p-lg-4 p-md-4 p-4">
+						<p class="card-text" style="text-align: justify;"><span style="color:var(--primary-light); font-weight: bold;">We excel at building data systems and analyzing data</span> regardless of its type. While our main focus is the analysis of the molecular data, we have a lot of experience with processing other kinds of tabular data, image data, sound data, and time series for which multiple grants in data science and innovation were secured in the past.
+						</p>
+						<p class="card-text" style="text-align: justify;">In most cases data preprocessing part needs extra care and attention to detail in relation to the domain. We adapt our approach to embrace <span style="color:var(--primary-light); font-weight: bold;">the imperative importance of Domain-Driven Design</span> through close collaboration with you. When building your data system, be it just a database or a more complex system with multiple components to integrate, we implement <span style="color:var(--primary-light); font-weight: bold;">appropriate strategies based on your input</span> and decide on architecture that ensures effective data collection, storage, retrieval and analysis in order to fulfill your business goals and expectations.
+						</p>
+					</div>
+				</div>
+				<hr class="mx-auto pb-0 mb-0 d-lg-block d-xl-none" style="width: 50%;">
+				<div class="col-12 col-md-10 col-lg-5 my-3 my-md-4 my-lg-4 my-xl-5" style="width: 590px;">
+					<div class="shadow py-4 p-xl-5 p-lg-4 p-md-4 p-4">
+						<p class="card-text" style="text-align: justify;">We combine our <span style="color:var(--primary-light); font-weight: bold;">diverse academic background</span>, which includes pharmacy, biochemistry, molecular biology, electronics, mathematics, computer science and programming engineering with our <span style="color:var(--primary-light); font-weight: bold;">accomplished and seasoned industry background</span> in pharmaceuticals, cheminformatics, applied statistics, data engineering, machine learning and software design.
+						</p>
+						<p class="card-text" style="text-align: justify;">Despite our full commitment to ongoing projects, we always find time to challenge <span style="color:var(--primary-light); font-weight: bold;">the latest methodologies and technologies</span> and do our own scientific research. This allows us the application of that same innovation and acquired novel knowledge for designing and creating your solution. Recently, this also led to winning of <span style="color:var(--primary-light); font-weight: bold;">the EU grant worth $1.5 mil</span> for advanced data science in pharmaceuticals. Initiating and participating in many patent screenings, applications and defenses has taught us how to <span style="color:var(--primary-light); font-weight: bold;">properly protect intellectual property in a timely manner</span>.
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr class="mx-auto mt-0 d-none d-md-none d-lg-none d-xl-block" style="width: 50%;">
+		</section>
+
+		<section id="team">
+			<div class="mx-auto container-fluid py-5" style="max-width:1920px;">
+				<div class="pt-5 row mx-auto justify-content-center">
+					<div class="col-md-11 col-12 px-md-0 px-2">
+						<h1 class="header text-center">Team</h1>
+					</div>
+				</div>
+				<div class="pt-5 row mx-auto justify-content-center" style="max-width:840px;">
+					<div class="col-12 mb-4 card-title"><p><span style="color:var(--primary-light); font-weight: bold;">Board of Directors</span></p></div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2">
+						<div class="card mx-auto border-0" style="max-width:220px;">
+							<img src="images/team/zsmole.png" class="card-img-top rounded-circle border border-2" style="border-color: var(--primary-light) !important;" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-black text-center"><a class="text-black link-body-emphasis link-offset-2 link-underline link-underline-opacity-0" href="https://hr.linkedin.com/in/zsmole" target="_blank" rel="noopener noreferrer"><p>Zlatko Smole <i class="bi bi-linkedin"></i></p></a></h5>
+								<p class="card-text" style="font-size:0.75rem;"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2">
+						<div class="card mx-auto mt-4 mt-sm-4 mt-md-0 border-0" style="max-width:220px;">
+							<img src="images/team/dbegusic.jpg" class="card-img-top rounded-circle border border-2" style="border-color: var(--primary-light) !important;" alt="...">
+							<div class="card-body">
+							  <h5 class="card-title text-black text-center"><a class="text-black link-body-emphasis link-offset-2 link-underline link-underline-opacity-0" href="https://hr.linkedin.com/in/domagojbegusic" target="_blank" rel="noopener noreferrer"><p>Domagoj Begušić <i class="bi bi-linkedin"></i></p></a></h5>
+							  <p class="card-text text-white" style="font-size:0.75rem;"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2">
+						<div class="card mx-auto mt-4 mt-sm-4 mt-md-0 border-0" style="max-width:220px;">
+							<img src="images/team/dpintar.jpg" class="card-img-top rounded-circle border border-2" style="border-color: var(--primary-light) !important;" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-black text-center"><a class="text-black link-body-emphasis link-offset-2 link-underline link-underline-opacity-0" href="https://hr.linkedin.com/in/damir-pintar-b1073a3" target="_blank" rel="noopener noreferrer"><p>Damir Pintar <i class="bi bi-linkedin"></i></p></a></h5>
+								<p class="card-text" style="font-size:0.75rem;"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pt-5 row mx-auto justify-content-center" style="max-width:840px;">
+					<div class="col-12 mb-4 card-title"><p><span style="color:var(--primary-light); font-weight: bold;">Scientific Advisory Board</span></p></div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2">
+						<div class="card mx-auto border-0" style="max-width:220px;">
+							<img src="images/team/bbasic.jpg" class="card-img-top rounded-circle border border-2" style="border-color: var(--primary-light) !important;" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-black text-center"><a class="text-black link-body-emphasis link-offset-2 link-underline link-underline-opacity-0" href="https://hr.linkedin.com/in/bojana-dalbelo-ba%C5%A1i%C4%87-76165353" target="_blank" rel="noopener noreferrer"><p>Bojana Dalbelo Bašić <i class="bi bi-linkedin"></i></p></a></h5>
+								<p class="card-text" style="font-size:0.75rem;"></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2">
+						<div class="card mx-auto mt-4 mt-sm-4 mt-md-0 border-0" style="max-width:220px;">
+							<img src="images/team/ijasprica.png" class="card-img-top rounded-circle border border-2" style="border-color: var(--primary-light) !important;" alt="...">
+							<div class="card-body">
+								<h5 class="card-title text-black text-center"><a class="text-black link-body-emphasis link-offset-2 link-underline link-underline-opacity-0" href="https://hr.linkedin.com/in/ivona-jasprica-7a591619" target="_blank" rel="noopener noreferrer"><p>Ivona Jasprica <i class="bi bi-linkedin"></i></p></a></h5>
+								<p class="card-text" style="font-size:0.75rem;"></p>
+							</div>
+						</div>
+					</div>
+					<span class="col-10 col-sm-10 col-md-4 col-lg-4 px-md-2 px-2"></span>
+				</div>
+			</div>
+		</section>
+
+		<section id="careers">
+			<div class="mx-auto container-fluid py-5" style="max-width:1920px;">
+				<div class="pt-5 row mx-auto justify-content-center">
+					<div class="col-md-11 col-12 px-md-0 px-2">
+						<h1 class="header text-center">Openings</h1>
+					</div>
+				</div>
+				<hr class="mb-5 mx-auto d-none d-md-none d-lg-none d-xl-block" style="width: 50%;">
+				<div class="py-5 row mx-auto justify-content-center" style="max-width:1920px;">
+					<div class="py-5 col-10 col-sm-10 col-md-8 col-lg-8 col-xl-7 text-center px-2 px-sm-5">
+						<p class="py-5">No job openings at this time.</h1>
+					</div>
+				</div>
+				<hr class="my-5 mx-auto d-none d-md-none d-lg-none d-xl-block" style="width: 50%;">
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="container-fluid mx-auto py-5">
+				<div class="row mx-auto justify-content-center" style="max-width:1920px;">
+					<div class="shadow card col-md-11 col-12 mt-5 px-0 rounded-5 position-relative" style="height:60vh; max-height: 540px; background-color: #e1fff4; background-image: url(images/background2.jpg); background-size: 100% 100%;">
+						<div class="text-center position-absolute top-50 start-50 translate-middle w-100 px-2">
+							<h1 class="mx-auto title d-none d-md-block text-white">Say Hello, We're Listening</h1>
+							<h1 class="mx-auto title d-md-none text-white" style="font-size:calc(1.7rem + 2vw);">Get in Touch</h1>
+							<p class="mx-auto mt-4 px-3 text-white" style="max-width:400px;">Grow your business and implement ideas with our biochemistry and computational expertise.</p>
+							<a type="button" href="mailto:info@modalis.ai" class="shadow-sm btn btn-secondary rounded-5 px-3 mt-4">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="footer" class="container-fluid bg-dark text-white pt-3 mt-5" style="max-width:1920px;">
+			<div class="row px-5 pt-5 pb-4">
+				<div class="col-12 col-sm-12 col-md-9">
+					<img class="ms-4" id="imgBrand" src="images/logo/modalis-dark.svg" alt="logo" width="160rem" height="50rem">
+					<h3 class="ms-4 pt-2" style="color:#ced4da; max-width:390px; font-family: Comfortaa;">From data to practical solutions</h3>
+				</div>
+				<div class="mt-4 mt-sm-4 mt-md-4 col-12 col-sm-12 col-md-3">
+					<div>
+						<p class="my-1 ms-0 ms-sm-0 ms-md-0"><i class="me-2 bi bi-envelope-at"></i>Email Address</p>
+						<p class="my-1 ms-1 ms-sm-1 ms-md-2" style="color:#ced4da;">info@modalis.ai</p>
+					</div>
+				</div>
+				<hr class="mt-5">
+				<div class="mt-3 col-12">
+					<p class="text-center" style="font-size:0.75rem;color:#ced4da;">Copyright © 2025 Modalis Ltd. All Rights Reserved.</p>
 				</div>
 			</div>
 		</section>
@@ -42,11 +306,20 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script>
 			$(document).ready(function(){
-				var logo_mt = $("#modalis").offset().top/4;
-				if (($(window).height()<=800 && $(window).width()<=400) || $(window).width()<=330) {
-					$('#logo').css("width","16rem")
-				}
-				$('#logo').css("margin-top",logo_mt)
+				$(this).scrollTop(0);
+				$(window).scroll(function(){
+					var scroll = $(window).scrollTop();
+					if (scroll > 150) {
+						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "#fdfdfd").addClass('border').addClass('border-1').addClass('shadow-sm');
+						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+					} else{
+						$(".navbar").css("background" , "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
+						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","160rem");
+					}
+				});
+			});
+			$(".navlink").click(function(){
+    			$('.offcanvas').offcanvas('hide');
 			});
 		</script>
 	</body>
