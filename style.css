@@ -1,16 +1,16 @@
 :root {
-  --background-light: #f2f6f9;
-  --background-dark: #000000;
   --text-light: #000000;
   --text-dark: #ffffff;
-  --primary-light: #28709e;
-  --primary-dark: #58d0ec;
-  --primary-accent-light: #ff0026;
-  --primary-accent-dark: #ff0026;
-  --secondary-light: #ffc107;
-  --secondary-dark: #ffc107;
-  --secondary-accent-light: #7e1946;
-  --secondary-accent-dark: #7e1946;
+  --primary: #28709e;
+  --primary-background: #f2f6fa;
+  --secondary-colors-1: #1ba1e2;
+  --secondary-colors-1-background: #f2f6fa;
+  --secondary-colors-2: #009999;
+  --secondary-colors-2-background: #f5faf3;
+  --secondary-colors-3: #ffc207;
+  --secondary-colors-3-backgorund: #f7e3d9;
+  --gray: #ced4da;
+  --navbar-text-dark: #fdfdfd;
 }
 
 #btnNavbarToggler {
