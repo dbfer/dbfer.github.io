@@ -17,7 +17,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-		<!-- Google tag (gtag.js) -->
+		<!-- Google tag (gtag.js)
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWE7BSJJF2"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
@@ -25,7 +25,7 @@
 		  gtag('js', new Date());
 		
 		  gtag('config', 'G-HWE7BSJJF2');
-		</script>
+		</script> -->
 	</head>
 	<body>
 		<!--NAVBAR-->
@@ -63,6 +63,25 @@
 			</div>
 		</nav>
 
+		<!-- Cookie Button -->
+		<button id="cookieToggle" class="shadow btn btn-primary cookie-btn border border-1" style="background-color: var(--primary); border-color: black;">
+		Cookies
+		</button>
+
+		<!-- Cookie Popup -->
+		<div id="cookiePopup" class="cookie-popup">
+		<div class="cookie-content">
+			<p>
+			We use analytics cookies to understand how visitors use our website (e.g. page visits and traffic). This helps us improve our content.
+			We use Google Analytics, which may collect information such as your IP address and interactions with the site, and may transfer data outside the EU.
+			You can accept or reject analytics cookies.
+			</p>
+			<div class="d-flex gap-2 justify-content-end">
+			<button id="acceptCookies" class="shadow btn btn-sm btn-secondary border border-1" style="border-color: black;">Accept</button>
+			<button id="rejectCookies" class="shadow btn btn-sm btn-outline-disabled border border-1" style="border-color: black;">Reject</button>
+			</div>
+		</div>
+		</div>
 
 		<section id="start">
 			<div class="fade-in-up mx-auto position-relative" style="height:100vh; max-height:1080px; max-width: 1920px; background-color: var(--primary-background);">
@@ -437,6 +456,55 @@
 			$(".navlink").click(function(){
     			$('.offcanvas').offcanvas('hide');
 			});
+		</script>
+		<script>
+		const popup = document.getElementById('cookiePopup');
+		const toggle = document.getElementById('cookieToggle');
+		const accept = document.getElementById('acceptCookies');
+		const reject = document.getElementById('rejectCookies');
+
+		// show popup
+		toggle.onclick = () => popup.classList.toggle('show');
+
+		// check saved choice
+		const consent = localStorage.getItem('cookie_consent');
+
+		if (consent === 'accepted') {
+		loadGA();
+		} else if (!consent) {
+		popup.classList.add('show');
+		}
+
+		// accept
+		accept.onclick = () => {
+		localStorage.setItem('cookie_consent', 'accepted');
+		popup.classList.remove('show');
+		loadGA();
+		};
+
+		// reject
+		reject.onclick = () => {
+		localStorage.setItem('cookie_consent', 'rejected');
+		popup.classList.remove('show');
+		};
+
+		// dynamically load Google Analytics
+		function loadGA() {
+		if (window.gaLoaded) return;
+		window.gaLoaded = true;
+
+		const script = document.createElement('script');
+		script.src = "https://www.googletagmanager.com/gtag/js?id=G-HWE7BSJJF2";
+		script.async = true;
+		document.head.appendChild(script);
+
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		window.gtag = gtag;
+
+		gtag('js', new Date());
+		gtag('config', 'G-HWE7BSJJF2');
+		}
 		</script>
 	</body>
 </html>
