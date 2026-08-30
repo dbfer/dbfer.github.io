@@ -167,3 +167,26 @@ p {
     bottom: 10px;
   }
 }
+
+.solution-card {
+	cursor: pointer;
+}
+
+.solution-card:hover .card {
+	transform: translateY(-2px);
+	box-shadow: 0 0.45rem 1rem rgba(0, 0, 0, 0.12) !important;
+	background-color: #fdfdfd;
+}
+
+.solution-card:active .card {
+	transform: translateY(0);
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.10) !important;
+}
+
+.solution-card:focus-visible {
+	outline: none;
+}
+
+.solution-card:focus-visible .card {
+	box-shadow: 0 0.45rem 1rem rgba(0, 0, 0, 0.12) !important;
+}
