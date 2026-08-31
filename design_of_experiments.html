@@ -179,10 +179,10 @@
 				$(window).scroll(function(){
 					var scroll = $(window).scrollTop();
 					if (scroll > 150) {
-						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "var(--navbar-text-dark)").addClass('border').addClass('border-1').addClass('shadow-sm');
+						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "rgba(255, 255, 255, 0.6)").css("backdrop-filter", "blur(12px) saturate(180%)").css("-webkit-backdrop-filter", "blur(12px) saturate(180%)").addClass('border').addClass('border-1').addClass('shadow-sm');
 						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
 					} else{
-						$(".navbar").css("background" , "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
+						$(".navbar").css("background" , "").css("backdrop-filter", "").css("-webkit-backdrop-filter", "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
 						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
 					}
 				});
