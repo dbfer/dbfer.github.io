@@ -55,20 +55,26 @@
 		</script>
 
 		<!-- NAVBAR -->
-		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4"
+		<nav class="mx-auto fixed-top navbar bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4"
 			style="max-width:1920px;">
 
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
-				<a href="../index.html">
+				<a href="#">
+					<img id="imgBrandSmall"
+						src="../images/logo/modalis-light.svg"
+						alt="logo"
+						width="33"
+						height="15"
+						class="d-inline d-sm-none pb-1">
 					<img id="imgBrand"
 						src="../images/logo/modalis-light.svg"
 						alt="logo"
-						width="110rem"
-						height="50rem">
+						width="110"
+						height="50"
+						class="d-none d-sm-inline">
 				</a>
 			</div>
-
-			<div class="col-8">
+			<div>
 				<ul class="navbar-nav flex-row justify-content-center align-items-center">
 					<li class="nav-item px-2">
 						<a class="nav-link" href="../index.html#solutions">
@@ -81,9 +87,11 @@
 			</div>
 
 			<div class="ms-auto col-2 justify-content-end text-end">
-				<a href="../index.html#contact"
-					class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1 navbar-contact-btn">
-					Work with us<i class="ms-2 bi bi-send text-warning"></i>
+				<a href="#contact"
+				class="shadow-sm btn btn-secondary rounded-5 px-2 px-sm-3 border border-1 navbar-contact-btn">
+					<span class="d-none d-sm-inline">Work with us</span>
+					<span class="d-inline d-sm-none">Say hi </span>
+					<i class="ms-sm-2 bi bi-send text-warning"></i>
 				</a>
 			</div>
 
