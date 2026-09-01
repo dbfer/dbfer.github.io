@@ -52,33 +52,39 @@
 			};
 		</script>
 
-		<!--NAVBAR-->
-		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
+		<!-- NAVBAR -->
+		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4"
+			style="max-width:1920px;">
+
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
 				<a href="../index.html">
-					<img id="imgBrand" src="../images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
+					<img id="imgBrand"
+						src="../images/logo/modalis-light.svg"
+						alt="logo"
+						width="110rem"
+						height="50rem">
 				</a>
 			</div>
-			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
-				<span id="btnNavbarTogglerSpan" class="bi bi-list"></span>
-			</button>
+
 			<div class="col-8">
-				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
-					<div class="offcanvas-header px-4 mt-4">
-						<img class="offcanvas-title" src="../images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
-						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
-					</div>
-					<ul class="offcanvas-body navbar-nav mx-auto">
-						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
-						<a class="nav-link " href="../index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
-						</li>
-					</ul>
-				</div>
+				<ul class="navbar-nav flex-row justify-content-center align-items-center">
+					<li class="nav-item px-2">
+						<a class="nav-link" href="../index.html#solutions">
+							<div class="btn btn-secondary mx-auto text-center rounded-pill navbar-back-btn">
+								<i class="mx-auto bi bi-arrow-left"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
 			</div>
 
-			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
-				<a href="../index.html#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
+			<div class="ms-auto col-2 justify-content-end text-end">
+				<a href="../index.html#contact"
+					class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1 navbar-contact-btn">
+					Work with us<i class="ms-2 bi bi-send text-warning"></i>
+				</a>
 			</div>
+
 		</nav>
 
 
