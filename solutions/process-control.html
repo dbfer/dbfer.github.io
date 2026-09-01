@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Modalis | Similarity Search - Find compounds with key traits</title>
-		<link rel="icon" type="image/x-icon" href="images/logo/logo.svg">
-		<link rel="icon" type="image/png" sizes="192x192" href="images/logo/logo_favicon-192.png">
-		<link rel="icon" type="image/png" sizes="256x256" href="images/logo/logo_favicon-256.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="images/logo/logo_favicon-48.png">
-		<link rel="shortcut icon" href="images/logo/logo_favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo_apple-touch-icon.png">
+		<title>Modalis | Process Control - Improve yield and stability</title>
+		<link rel="icon" type="image/x-icon" href="../images/logo/logo.svg">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/logo/logo_favicon-192.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="../images/logo/logo_favicon-256.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="../images/logo/logo_favicon-48.png">
+		<link rel="shortcut icon" href="../images/logo/logo_favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/logo/logo_apple-touch-icon.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -30,24 +30,24 @@
 	<body>
 		<script>
 			const content = {
-				banner_title1: "Similarity Search",
-				banner_subtitle: "Find molecular relationships that matter",
-				banner_image: "images/new/modalis_similarity_search.svg",
+				banner_title1: "Process Control",
+				banner_subtitle: "Turn process variation into more reliable and measurable development outcomes",
+				banner_image: "../images/new/modalis_process_control.svg",
 
-				post_title1: "Find meaningful",
-				post_title2: "molecular similarities",
-				post_subtitle: "Search beyond exact matches to identify compounds that share relevant structural or chemical characteristics.",
+				post_title1: "Understand Process",
+				post_title2: "Control Outcomes",
+				post_subtitle: "Connect process variables, experimental data and quality outcomes to improve development decisions",
 
 				post_elements: [
-					["p", "Molecular similarity search provides a practical way to navigate chemical space. Rather than looking only for identical structures, compounds can be compared according to their molecular representations and the features that define their chemical relationships."],
+					["p","Process development often involves many variables that influence yield, stability and product quality simultaneously. Our approach treats these variables as an interconnected system, using structured experimentation and quantitative analysis to determine which factors matter and how their effects combine."],
 
-					["p", "Our approach can help identify molecules that resemble a known compound while allowing controlled variation in structure. This is useful when exploring analogues, expanding a set of candidates, or looking for alternative molecules with potentially relevant properties."],
+					["p","We define the process around measurable responses and relevant operating variables, then design experiments that efficiently explore their relationships. This allows important effects and interactions to be identified without relying on isolated one factor at a time investigations."],
 
-					["p", "Similarity can be evaluated using molecular fingerprints and appropriate distance or similarity measures. The resulting ranking gives researchers a systematic way to move from a known molecule toward related regions of chemical space instead of relying exclusively on manual structure inspection."],
+					["p","The resulting data are converted into statistical models that describe process behaviour across the investigated experimental space. These models provide a quantitative basis for identifying influential parameters, evaluating variability and locating operating regions associated with the desired performance."],
 
-					["p", "The method is particularly useful as an early stage filtering and exploration step. It can reduce large compound collections to focused sets for subsequent analysis, screening, docking, property prediction, or experimental evaluation."],
+					["p","For pharmaceutical and biotechnological development, this can connect critical process parameters with critical quality attributes and support the definition of robust operating ranges. The objective is not simply to optimize a single experimental condition, but to understand where reliable performance can be achieved."],
 
-					["p", "The objective is not simply to find molecules that look alike. It is to make chemical space easier to explore and provide a reproducible basis for deciding which molecular relationships are worth investigating further."]
+					["p","At Modalis, process control usually connects Design of Experiments, statistical modelling and computational analysis. This creates a continuous feedback loop in which each experiment improves process understanding and directs the next development decision toward the variables with the greatest potential impact."]
 				]
 			};
 		</script>
@@ -55,8 +55,8 @@
 		<!--NAVBAR-->
 		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
-				<a href="index.html">
-					<img id="imgBrand" src="images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
+				<a href="../index.html">
+					<img id="imgBrand" src="../images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
 				</a>
 			</div>
 			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
@@ -65,19 +65,19 @@
 			<div class="col-8">
 				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
 					<div class="offcanvas-header px-4 mt-4">
-						<img class="offcanvas-title" src="images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
+						<img class="offcanvas-title" src="../images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
 					</div>
 					<ul class="offcanvas-body navbar-nav mx-auto">
 						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
-						<a class="nav-link " href="index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
+						<a class="nav-link " href="../index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
-				<a href="#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
+				<a href="../index.html#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
 			</div>
 		</nav>
 
@@ -91,12 +91,12 @@
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mb-4 d-none d-md-block text-start" style="color: #434343; max-width:400px;"></h3>				
 							<h3 class="banner_subtitle mb-4 d-md-none text-start" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-5 col-xl-3 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
 								<div></div>
-								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:250px;"/>
+								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:230px;"/>
 							</div>
 						</div>
 					</div>
@@ -108,12 +108,12 @@
 							<h1 class="banner_title1 title d-none d-md-block text-center" style="color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mx-auto mb-4" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-12 col-sm-12 col-md-12 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
 								<div></div>
-								<img src="" class="banner_image img-fluid position-absolute bottom-0 start-50 translate-middle" style="width:100%; max-width:166px;"/>
+								<img src="" class="banner_image img-fluid position-absolute bottom-0 start-50 translate-middle" style="width:100%; max-width:200px;"/>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 							<h1 class="mx-auto d-none d-md-block text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Say Hello, We're Listening</h1>
 							<h1 class="mx-auto d-md-none text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Get in Touch</h1>
 							<div class="mx-auto mt-4 px-3 text-black" style="max-width:520px;">Grow your business and implement ideas with our biochemistry and computational expertise.</div>
-							<a type="button" href="mailto:info@modalis.ai" class="shadow-sm btn btn-primary rounded-5 px-3 mt-4" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
+							<a type="button" href="mailto:info@modalis.ai" class="shadow btn btn-primary px-3 mt-4 rounded-5 border border-1" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@
 		<section id="footer" class="container-fluid bg-dark text-white pt-3" style="max-width:1920px;">
 			<div class="row px-5 pt-5 pb-4 justify-content-center">
 				<div class="col-12 col-sm-12 col-md-9">
-					<img class="ms-4" id="imgBrand" src="images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
+					<img class="ms-4" id="imgBrand" src="../images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
 					<h3 class="ms-4 pt-2" style="color:var(--gray); max-width:390px; font-family: Comfortaa;">From data to practical solutions</h3>
 				</div>
 				<div class="mt-4 mt-sm-4 mt-md-4 col-5 col-sm-5 col-md-3">
@@ -178,10 +178,10 @@
 					var scroll = $(window).scrollTop();
 					if (scroll > 150) {
 						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "rgba(255, 255, 255, 0.6)").css("backdrop-filter", "blur(12px) saturate(180%)").css("-webkit-backdrop-filter", "blur(12px) saturate(180%)").addClass('border').addClass('border-1').addClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					} else{
 						$(".navbar").css("background" , "").css("backdrop-filter", "").css("-webkit-backdrop-filter", "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					}
 				});
 			});

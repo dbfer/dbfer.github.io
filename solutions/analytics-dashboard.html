@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Modalis | ADMET Modeling - Predict ADMET for over 60 properties</title>
-		<link rel="icon" type="image/x-icon" href="images/logo/logo.svg">
-		<link rel="icon" type="image/png" sizes="192x192" href="images/logo/logo_favicon-192.png">
-		<link rel="icon" type="image/png" sizes="256x256" href="images/logo/logo_favicon-256.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="images/logo/logo_favicon-48.png">
-		<link rel="shortcut icon" href="images/logo/logo_favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo_apple-touch-icon.png">
+		<title>Modalis | Analytics Dashboard - Periodic insight vizualization</title>
+		<link rel="icon" type="image/x-icon" href="../images/logo/logo.svg">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/logo/logo_favicon-192.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="../images/logo/logo_favicon-256.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="../images/logo/logo_favicon-48.png">
+		<link rel="shortcut icon" href="../images/logo/logo_favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/logo/logo_apple-touch-icon.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -30,24 +30,19 @@
 	<body>
 		<script>
 			const content = {
-				banner_title1: "ADMET Modeling",
-				banner_subtitle: "Predict molecular properties to prioritize compounds with balanced profiles",
-				banner_image: "images/new/modalis_admet_modeling.svg",
+				banner_title1: "Analytics Dashboard",
+				banner_subtitle: "From complex datasets to clear scientific insight that deserves attention",
+				banner_image: "../images/new/modalis_analytics_dashboard.svg",
 
-				post_title1: "Predict Molecular Properties",
-				post_title2: "Prioritize Better Candidates",
-				post_subtitle: "Characterize ADMET behaviour early to identify liabilities and guide more informed compound design",
+				post_title1: "Make complex data",
+				post_title2: "easier to understand",
+				post_subtitle: "Explore results, compare conditions, and identify the patterns",
 
 				post_elements: [
-					["p","A molecule can show strong target activity while presenting limitations in absorption, distribution, metabolism, excretion or toxicity. ADMET modelling brings these properties into the discovery process earlier, allowing candidate quality to be evaluated alongside biological activity rather than after substantial development effort has already been invested."],
-
-					["p","Our models use molecular representations and experimental data to predict a broad range of physicochemical, pharmacokinetic and toxicity related properties. Depending on the project, these can include solubility, permeability, metabolic stability, plasma protein binding, clearance and other endpoints relevant to compound progression."],
-
-					["p","Prediction is treated as a quantitative decision support layer rather than an isolated score. Model performance depends on the quality and applicability of the underlying data, so predictions are interpreted within their chemical and experimental context and used to distinguish promising regions of chemical space from potential liabilities."],
-
-					["p","ADMET predictions can be incorporated directly into compound prioritization and optimization workflows. By evaluating multiple properties simultaneously, computational screening can help identify structural modifications that improve the overall profile of a molecule while maintaining the characteristics required for its intended biological function."],
-
-					["p","At Modalis, ADMET Modeling usually connects molecular description, machine learning and generative design. This enables property prediction to become part of an iterative discovery process in which compounds are evaluated, redesigned and prioritized according to a broader definition of molecular quality."]
+					["p", "Scientific datasets can become difficult to interpret as experiments grow in scale and complexity. Our approach turns these datasets into focused analytical views where the important relationships, differences, and trends can be examined directly."],
+					["p", "The dashboard brings relevant measurements into one structured environment. Instead of relying on isolated tables or static figures, researchers can move between experimental conditions, variables, and observations while retaining the context of the underlying data."],
+					["p", "Good visualization should make the data easier to inspect, not simply make it look better. We use appropriate graphical representations to expose distributions, relationships, variation, and potential anomalies while keeping the original measurements visible wherever practical."],
+					["p", "The result is a practical analytical layer between raw experimental data and deeper computational work. It supports faster interpretation, clearer communication, and more informed decisions about which observations or hypotheses should be investigated next."]
 				]
 			};
 		</script>
@@ -55,8 +50,8 @@
 		<!--NAVBAR-->
 		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
-				<a href="index.html">
-					<img id="imgBrand" src="images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
+				<a href="../index.html">
+					<img id="imgBrand" src="../images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
 				</a>
 			</div>
 			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
@@ -65,19 +60,19 @@
 			<div class="col-8">
 				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
 					<div class="offcanvas-header px-4 mt-4">
-						<img class="offcanvas-title" src="images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
+						<img class="offcanvas-title" src="../images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
 					</div>
 					<ul class="offcanvas-body navbar-nav mx-auto">
 						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
-						<a class="nav-link " href="index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
+						<a class="nav-link " href="../index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
-				<a href="#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
+				<a href="../index.html#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
 			</div>
 		</nav>
 
@@ -91,12 +86,12 @@
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mb-4 d-none d-md-block text-start" style="color: #434343; max-width:400px;"></h3>				
 							<h3 class="banner_subtitle mb-4 d-md-none text-start" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-5 col-xl-3 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
 								<div></div>
-								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:230px;"/>
+								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:300px;"/>
 							</div>
 						</div>
 					</div>
@@ -108,7 +103,7 @@
 							<h1 class="banner_title1 title d-none d-md-block text-center" style="color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mx-auto mb-4" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-12 col-sm-12 col-md-12 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
@@ -142,7 +137,7 @@
 							<h1 class="mx-auto d-none d-md-block text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Say Hello, We're Listening</h1>
 							<h1 class="mx-auto d-md-none text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Get in Touch</h1>
 							<div class="mx-auto mt-4 px-3 text-black" style="max-width:520px;">Grow your business and implement ideas with our biochemistry and computational expertise.</div>
-							<a type="button" href="mailto:info@modalis.ai" class="shadow-sm btn btn-primary rounded-5 px-3 mt-4" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
+							<a type="button" href="mailto:info@modalis.ai" class="shadow btn btn-primary px-3 mt-4 rounded-5 border border-1" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
 						</div>
 					</div>
 				</div>
@@ -152,7 +147,7 @@
 		<section id="footer" class="container-fluid bg-dark text-white pt-3" style="max-width:1920px;">
 			<div class="row px-5 pt-5 pb-4 justify-content-center">
 				<div class="col-12 col-sm-12 col-md-9">
-					<img class="ms-4" id="imgBrand" src="images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
+					<img class="ms-4" id="imgBrand" src="../images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
 					<h3 class="ms-4 pt-2" style="color:var(--gray); max-width:390px; font-family: Comfortaa;">From data to practical solutions</h3>
 				</div>
 				<div class="mt-4 mt-sm-4 mt-md-4 col-5 col-sm-5 col-md-3">
@@ -178,10 +173,10 @@
 					var scroll = $(window).scrollTop();
 					if (scroll > 150) {
 						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "rgba(255, 255, 255, 0.6)").css("backdrop-filter", "blur(12px) saturate(180%)").css("-webkit-backdrop-filter", "blur(12px) saturate(180%)").addClass('border').addClass('border-1').addClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					} else{
 						$(".navbar").css("background" , "").css("backdrop-filter", "").css("-webkit-backdrop-filter", "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					}
 				});
 			});

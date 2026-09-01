@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Modalis | Clustering - Group compounds smart screening</title>
-		<link rel="icon" type="image/x-icon" href="images/logo/logo.svg">
-		<link rel="icon" type="image/png" sizes="192x192" href="images/logo/logo_favicon-192.png">
-		<link rel="icon" type="image/png" sizes="256x256" href="images/logo/logo_favicon-256.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="images/logo/logo_favicon-48.png">
-		<link rel="shortcut icon" href="images/logo/logo_favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo_apple-touch-icon.png">
+		<title>Modalis | Database Systems - Manage and secure data</title>
+		<link rel="icon" type="image/x-icon" href="../images/logo/logo.svg">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/logo/logo_favicon-192.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="../images/logo/logo_favicon-256.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="../images/logo/logo_favicon-48.png">
+		<link rel="shortcut icon" href="../images/logo/logo_favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/logo/logo_apple-touch-icon.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -30,24 +30,24 @@
 	<body>
 		<script>
 			const content = {
-				banner_title1: "Clustering",
-				banner_subtitle: "Group related molecules and explore chemical space with greater clarity",
-				banner_image: "images/new/modalis_clustering.svg",
-
-				post_title1: "Reveal the hidden structure",
-				post_title2: "within chemical space",
-				post_subtitle: "Identify meaningful molecular patterns, reduce redundancy, and explore complex chemical space more efficiently",
-
+				banner_title1: "Database Systems",
+				banner_subtitle: "Structured chemical data systems for reliable integration and analysis",
+				banner_image: "../images/new/modalis_database_systems.svg",
+				post_title1: "From Chemical Data",
+				post_title2: "to Structured Information",
+				post_subtitle: "Consistent, searchable and reusable chemical information",
 				post_elements: [
-					["p", "Large molecular collections can contain thousands of compounds with overlapping structural features. Clustering provides a systematic way to organize this chemical space into groups of related molecules, making complex libraries easier to explore and interpret."],
+					["p","Chemical databases are useful only when the underlying records can be interpreted consistently. Our database systems therefore begin with structured data ingestion, validation and normalization. Molecular structures, identifiers, annotations and experimental measurements are transformed into a consistent internal representation so that records originating from different sources can be queried and compared reliably. This includes structure standardization and controlled handling of identifiers, synonyms and molecular records."],
 
-					["p", "Molecules can be represented using molecular fingerprints or other structural descriptors, followed by clustering according to an appropriate similarity or distance measure. The resulting groups reflect relationships within the selected representation rather than imposing a predefined biological classification."],
+					["p","We organize chemical information around linked entities rather than isolated tables. Molecular structures can be connected with identifiers, physicochemical properties, biological targets, assays, experimental results, publications and other relevant annotations. This structure preserves relationships between data types while allowing individual components to be updated, extended or queried independently."],
 
-					["p", "This approach can help identify chemotypes, structural families, and regions of chemical space with different levels of diversity. It can also reveal how broadly a compound collection covers chemical space and where substantial structural redundancy may exist."],
+					["p","The database layer can support chemical structure retrieval in addition to conventional text and attribute queries. Depending on the application, records may be searched by exact identity, structural similarity, substructure or other chemically defined criteria. This makes the database an active analytical component rather than simply a repository for stored molecular records."],
 
-					["p", "For screening and discovery workflows, clustering can support the selection of representative subsets rather than treating every molecule as an independent candidate. This can make experimental follow up more efficient while preserving broader chemical diversity across the selected set."],
+					["p","Information assembled from multiple sources rarely uses identical identifiers, naming conventions or data structures. We therefore implement mapping and integration procedures that connect equivalent records while preserving their provenance. The resulting system can combine internal datasets with external chemical, biological or literature derived information without discarding the distinctions between source records."],
 
-					["p", "The value of clustering is therefore not simply the creation of groups. It provides a higher level view of a molecular collection, helping researchers understand its composition, prioritize representative compounds, and decide where further computational or experimental investigation is most informative."]
+					["p","Curation is incorporated into the database architecture rather than treated as a final cleaning step. Records can retain source information, version history and relevant quality information, allowing the origin and processing state of a data item to remain traceable. This provides a more reliable basis for downstream analysis and reduces ambiguity when datasets are expanded or revised."],
+
+					["p","The resulting database system provides a structured foundation for computational work. It can support repeated queries, dataset construction, molecular analysis and integration with modelling pipelines while remaining extensible as new compounds, measurements and annotations become available. The objective is a dependable data layer that turns heterogeneous chemical information into an accessible and reusable scientific resource."]
 				]
 			};
 		</script>
@@ -55,8 +55,8 @@
 		<!--NAVBAR-->
 		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
-				<a href="index.html">
-					<img id="imgBrand" src="images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
+				<a href="../index.html">
+					<img id="imgBrand" src="../images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
 				</a>
 			</div>
 			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
@@ -65,19 +65,19 @@
 			<div class="col-8">
 				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
 					<div class="offcanvas-header px-4 mt-4">
-						<img class="offcanvas-title" src="images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
+						<img class="offcanvas-title" src="../images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
 					</div>
 					<ul class="offcanvas-body navbar-nav mx-auto">
 						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
-						<a class="nav-link " href="index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
+						<a class="nav-link " href="../index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
-				<a href="#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
+				<a href="../index.html#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
 			</div>
 		</nav>
 
@@ -91,12 +91,12 @@
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mb-4 d-none d-md-block text-start" style="color: #434343; max-width:400px;"></h3>				
 							<h3 class="banner_subtitle mb-4 d-md-none text-start" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-5 col-xl-3 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
 								<div></div>
-								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:200px;"/>
+								<img src="" class="banner_image img-fluid position-absolute top-50 translate-middle" style="width:100%; max-width:150px;"/>
 							</div>
 						</div>
 					</div>
@@ -108,12 +108,12 @@
 							<h1 class="banner_title1 title d-none d-md-block text-center" style="color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mx-auto mb-4" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-12 col-sm-12 col-md-12 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
 								<div></div>
-								<img src="" class="banner_image img-fluid position-absolute bottom-0 start-50 translate-middle" style="width:100%; max-width:133px;"/>
+								<img src="" class="banner_image img-fluid position-absolute bottom-0 start-50 translate-middle" style="width:100%; max-width:150px;"/>
 							</div>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 							<h1 class="mx-auto d-none d-md-block text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Say Hello, We're Listening</h1>
 							<h1 class="mx-auto d-md-none text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Get in Touch</h1>
 							<div class="mx-auto mt-4 px-3 text-black" style="max-width:520px;">Grow your business and implement ideas with our biochemistry and computational expertise.</div>
-							<a type="button" href="mailto:info@modalis.ai" class="shadow-sm btn btn-primary rounded-5 px-3 mt-4" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
+							<a type="button" href="mailto:info@modalis.ai" class="shadow btn btn-primary px-3 mt-4 rounded-5 border border-1" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
 						</div>
 					</div>
 				</div>
@@ -152,7 +152,7 @@
 		<section id="footer" class="container-fluid bg-dark text-white pt-3" style="max-width:1920px;">
 			<div class="row px-5 pt-5 pb-4 justify-content-center">
 				<div class="col-12 col-sm-12 col-md-9">
-					<img class="ms-4" id="imgBrand" src="images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
+					<img class="ms-4" id="imgBrand" src="../images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
 					<h3 class="ms-4 pt-2" style="color:var(--gray); max-width:390px; font-family: Comfortaa;">From data to practical solutions</h3>
 				</div>
 				<div class="mt-4 mt-sm-4 mt-md-4 col-5 col-sm-5 col-md-3">
@@ -178,10 +178,10 @@
 					var scroll = $(window).scrollTop();
 					if (scroll > 150) {
 						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "rgba(255, 255, 255, 0.6)").css("backdrop-filter", "blur(12px) saturate(180%)").css("-webkit-backdrop-filter", "blur(12px) saturate(180%)").addClass('border').addClass('border-1').addClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					} else{
 						$(".navbar").css("background" , "").css("backdrop-filter", "").css("-webkit-backdrop-filter", "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					}
 				});
 			});

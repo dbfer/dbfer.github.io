@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://modalis.ai/</loc>
+    </url>
+
+    <url>
+        <loc>https://modalis.ai/discovery-platform/discovery-platform.html</loc>
+    </url>
+
+    <url>
+        <loc>https://modalis.ai/solutions/molecular-description.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/database-systems.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/analytics-dashboard.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/design-of-experiments.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/process-control.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/similarity-search.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/clustering.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/molecular-dynamics.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/molecular-docking.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/admet-modeling.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/generative-ai.html</loc>
+    </url>
+    <url>
+        <loc>https://modalis.ai/solutions/degradation-prediction.html</loc>
+    </url>
+
+</urlset>

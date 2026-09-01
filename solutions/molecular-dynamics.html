@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Modalis | Design of Experiments - Know more by doing less</title>
-		<link rel="icon" type="image/x-icon" href="images/logo/logo.svg">
-		<link rel="icon" type="image/png" sizes="192x192" href="images/logo/logo_favicon-192.png">
-		<link rel="icon" type="image/png" sizes="256x256" href="images/logo/logo_favicon-256.png">
-		<link rel="icon" type="image/png" sizes="48x48" href="images/logo/logo_favicon-48.png">
-		<link rel="shortcut icon" href="images/logo/logo_favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo_apple-touch-icon.png">
+		<title>Modalis | Molecular Dynamics - Simulate motion and stability</title>
+		<link rel="icon" type="image/x-icon" href="../images/logo/logo.svg">
+		<link rel="icon" type="image/png" sizes="192x192" href="../images/logo/logo_favicon-192.png">
+		<link rel="icon" type="image/png" sizes="256x256" href="../images/logo/logo_favicon-256.png">
+		<link rel="icon" type="image/png" sizes="48x48" href="../images/logo/logo_favicon-48.png">
+		<link rel="shortcut icon" href="../images/logo/logo_favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="../images/logo/logo_apple-touch-icon.png">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="../style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
@@ -30,26 +30,24 @@
 	<body>
 		<script>
 			const content = {
-				banner_title1: "Design of Experiments",
-				banner_subtitle: "Know more, test less, and make every experiment count toward better decisions",
-				banner_image: "images/new/modalis_design_of_experiments.svg",
+				banner_title1: "Molecular Dynamics",
+				banner_subtitle: "Simulate molecular motion to understand stability, flexibility and interactions",
+				banner_image: "../images/new/modalis_molecular_dynamics.svg",
 
-				post_title1: "Better Experiments",
-				post_title2: "Better Decisions",
-				post_subtitle: "A systematic approach to learning more from every experimental run with greater efficiency",
+				post_title1: "See Molecular Motion",
+				post_title2: "Understand Stability",
+				post_subtitle: "Explore how molecular structure changes over time and how dynamics shape molecular behaviour",
 
 				post_elements: [
-					["p","Experimental development becomes inefficient when variables are investigated independently. Design of Experiments allows multiple factors to be studied together, revealing which variables influence the response and where interactions between them become important. This replaces fragmented experimentation with a structured experimental strategy."],
+					["p","Molecular structures are dynamic systems rather than fixed arrangements of atoms. Molecular Dynamics simulations provide a computational view of this motion by calculating how atoms evolve over time under defined physical conditions, revealing conformational changes that are difficult to infer from a static structure alone."],
 
-					["p","We begin by translating the scientific objective into measurable responses, relevant factors and meaningful experimental ranges. The design is then selected according to the question being addressed, whether the objective is factor screening, process understanding, optimization or robustness assessment. This establishes the experimental space before resources are committed to individual runs."],
+					["p","We use Molecular Dynamics to investigate structural flexibility, conformational stability and interactions between molecules. Simulations can reveal transient states, local rearrangements and changes in molecular contacts that may influence recognition, binding or overall structural behaviour."],
 
-					["p","The resulting data are analysed using statistical models that connect experimental factors with observed responses. These models provide quantitative insight into main effects, interactions and process behaviour, allowing experimental results to be interpreted as a coherent system rather than as isolated observations."],
+					["p","The resulting trajectories are analysed through quantitative descriptors such as root mean square deviation, root mean square fluctuation, radius of gyration and interaction patterns. These measurements transform complex atomic motion into interpretable evidence about the behaviour of the system."],
 
-					["p","For development workflows, this approach can be used to identify critical process parameters, understand their relationship with critical quality attributes and define regions in which the desired performance is achieved. Factorial, response surface and mixture designs provide different ways of exploring these relationships according to the structure of the problem."],
+					["p","For drug discovery and molecular engineering, this perspective can complement structural modelling and docking by testing whether predicted complexes remain stable during simulation. It can also help identify regions of flexibility and interactions that may warrant further investigation."],
 
-					["p","The important result is not simply fewer experiments. It is more information per experiment. By combining experimental design with statistical modelling and computational analysis, each experiment contributes to a progressively clearer representation of the system and helps determine where further investigation will provide the greatest value."],
-
-					["p","At Modalis, we usually integrate Design of Experiments with our broader computational capabilities to connect experimentation, modelling and decision making. The objective is a practical development process in which experimental resources are directed toward the questions that matter most."]
+					["p","At Modalis, Molecular Dynamics usually forms part of a broader computational workflow connecting molecular representation, docking, simulation and machine learning. The objective is to move beyond static predictions and obtain a more complete understanding of molecular behaviour."]
 				]
 			};
 		</script>
@@ -57,8 +55,8 @@
 		<!--NAVBAR-->
 		<nav class="mx-auto fixed-top navbar navbar-expand-lg bg-transparent rounded-top rounded-3 px-4 px-lg-5 px-3 mt-4" style="max-width:1920px;">
 			<div class="navbar-brand me-auto col-2 justify-content-start text-start">
-				<a href="index.html">
-					<img id="imgBrand" src="images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
+				<a href="../index.html">
+					<img id="imgBrand" src="../images/logo/modalis-light.svg" alt="logo" width="110rem" height="50rem">
 				</a>
 			</div>
 			<button id="btnNavbarToggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbar">
@@ -67,19 +65,19 @@
 			<div class="col-8">
 				<div class="offcanvas offcanvas-top col-12 h-100 rounded rounded-1" id="navbar">
 					<div class="offcanvas-header px-4 mt-4">
-						<img class="offcanvas-title" src="images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
+						<img class="offcanvas-title" src="../images/logo/modalis-light.svg" alt="Modalis" width="160rem" height="50rem">
 						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" style="position:absolute; right:0; margin-right:1.5rem;opacity:1.0;"></button>
 					</div>
 					<ul class="offcanvas-body navbar-nav mx-auto">
 						<li class="nav-item px-2" data-bs-dismiss="offcanvas">
-						<a class="nav-link " href="index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
+						<a class="nav-link " href="../index.html#solutions"><div class="btn btn-secondary mx-auto text-center rounded-pill" style="width: 75px; color: #fff;"><i class="mx-auto bi bi-arrow-left"></i></div></a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="ms-auto col-2 justify-content-end text-end collapse navbar-collapse">
-				<a href="#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
+				<a href="../index.html#contact" class="shadow-sm btn btn-secondary rounded-5 px-lg-2 px-xl-3 border border-1">Work with us<i class="ms-2 bi bi-send text-warning"></i></a>
 			</div>
 		</nav>
 
@@ -93,7 +91,7 @@
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mb-4 d-none d-md-block text-start" style="color: #434343; max-width:400px;"></h3>				
 							<h3 class="banner_subtitle mb-4 d-md-none text-start" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-5 col-xl-3 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
@@ -110,7 +108,7 @@
 							<h1 class="banner_title1 title d-none d-md-block text-center" style="color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h1 class="banner_title1 title d-md-none" style="font-size:calc(1.7rem + 2vw); color: #000; font-family: Comfortaa; font-weight: bold;"></h1>
 							<h3 class="banner_subtitle mx-auto mb-4" style="color: #434343; max-width:400px;"></h3>				
-							<a href="#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
+							<a href="../index.html#content" class="shadow btn btn-primary rounded-5 border border-1 text-white" style="background-color: var(--primary);">Explore<i class="ms-2 bi bi-play" style="color: var(--secondary-colors-3-background);"></i></a>
 						</div>
 						<div class="d-block d-sm-block d-md-block d-lg-none d-xl-none col-12 col-sm-12 col-md-12 mt-5 text-center">
 							<div class="mx-auto" style="background-color: transparent;">
@@ -144,7 +142,7 @@
 							<h1 class="mx-auto d-none d-md-block text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Say Hello, We're Listening</h1>
 							<h1 class="mx-auto d-md-none text-black" style="color: #000; font-family: Comfortaa; font-weight: bold;">Get in Touch</h1>
 							<div class="mx-auto mt-4 px-3 text-black" style="max-width:520px;">Grow your business and implement ideas with our biochemistry and computational expertise.</div>
-							<a type="button" href="mailto:info@modalis.ai" class="shadow-sm btn btn-primary rounded-5 px-3 mt-4" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
+							<a type="button" href="mailto:info@modalis.ai" class="shadow btn btn-primary px-3 mt-4 rounded-5 border border-1" style="background-color: var(--primary);">Contact us<i class="ms-2 bi bi-play text-warning"></i></a>
 						</div>
 					</div>
 				</div>
@@ -154,7 +152,7 @@
 		<section id="footer" class="container-fluid bg-dark text-white pt-3" style="max-width:1920px;">
 			<div class="row px-5 pt-5 pb-4 justify-content-center">
 				<div class="col-12 col-sm-12 col-md-9">
-					<img class="ms-4" id="imgBrand" src="images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
+					<img class="ms-4" id="imgBrand" src="../images/logo/modalis-dark.svg" alt="logo" width="110rem" height="50rem">
 					<h3 class="ms-4 pt-2" style="color:var(--gray); max-width:390px; font-family: Comfortaa;">From data to practical solutions</h3>
 				</div>
 				<div class="mt-4 mt-sm-4 mt-md-4 col-5 col-sm-5 col-md-3">
@@ -180,10 +178,10 @@
 					var scroll = $(window).scrollTop();
 					if (scroll > 150) {
 						$(".navbar").removeClass('bg-transparent').addClass('py-1').removeClass('mt-4').css("background" , "rgba(255, 255, 255, 0.6)").css("backdrop-filter", "blur(12px) saturate(180%)").css("-webkit-backdrop-filter", "blur(12px) saturate(180%)").addClass('border').addClass('border-1').addClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					} else{
 						$(".navbar").css("background" , "").css("backdrop-filter", "").css("-webkit-backdrop-filter", "").addClass('bg-transparent').removeClass('py-1').addClass('mt-4').removeClass('border').removeClass('border-1').removeClass('shadow-sm');
-						$("#imgBrand").attr("src","images/logo/modalis-light.svg").attr("width","110rem");
+						$("#imgBrand").attr("src","../images/logo/modalis-light.svg").attr("width","110rem");
 					}
 				});
 			});
